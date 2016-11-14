@@ -1,0 +1,33 @@
+<resources>
+    <!-- Title for the application. [CHAR LIMIT=12] -->
+    <string name="app_name">Learn Spanish</string>
+
+    <!-- Category name for phrases [CHAR LIMIT=20] -->
+    <string name="category_phrases">Phrases - Frases</string>
+
+    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
+    <string name="category_colors">Colors - Colores</string>
+
+    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
+    <string name="category_numbers">Numbers - Números</string>
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <string name="category_family">Family - Familia</string>
+
+    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
+    <string name="category_food">Food - Comida</string>
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <string name="category_animal">Animals - Animales</string>
+
+    <!-- Category name for the vocabulary words for calendar members [CHAR LIMIT=20] -->
+    <string name="category_calendar">Calendar - Calendario</string>
+
+    <!-- Splash screen  [CHAR LIMIT=20] -->
+    <string name="developer">Developer: Najeeb Chaudhry\n\tnajeeb3kz@gmail.com</string>
+
+    <!-- Splash screen [CHAR LIMIT=20] -->
+    <string name="learn_spanish">Learn Spanish!</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

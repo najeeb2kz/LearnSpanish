@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chaudhry.najeeb.learnspanish"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- minSdkVersion=16 i.e., api16 Jelly Bean android 4.1 because up button started in api 16 -->
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="23" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <!-- Splash screen  -->
+        <activity
+            android:name="com.chaudhry.najeeb.learnspanish.SplashScreenActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main activity  -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".PhrasesActivity"
+            android:label="@string/category_phrases"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".NumbersActivity"
+            android:label="@string/category_numbers"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".FamilyActivity"
+            android:label="@string/category_family"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".ColorsActivity"
+            android:label="@string/category_colors"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".FoodActivity"
+            android:label="@string/category_food"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".AnimalActivity"
+            android:label="@string/category_animal"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".CalendarActivity"
+            android:label="@string/category_calendar"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+    </application>
+
+</manifest>
