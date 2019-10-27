@@ -4,12 +4,13 @@ import android.content.Context;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 
 public class AnimalActivity extends AppCompatActivity {
@@ -33,10 +34,10 @@ public class AnimalActivity extends AppCompatActivity {
         public void onAudioFocusChange(int focusChange) {
             if (focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT ||
                     focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK) {
-                // The AUDIOFOCUS_LOSS_TRANSIENT case means that we've lost audio focus for a
-                // short amount of time. The AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK case means that
-                // our app is allowed to continue playing sound but at a lower volume. We'll treat
-                // both cases the same way because our app is playing short sound files.
+                //The AUDIOFOCUS_LOSS_TRANSIENT case means that we've lost audio focus for a
+                //short amount of time. The AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK case means that
+                //our app is allowed to continue playing sound but at a lower volume. We'll treat
+                //both cases the same way because our app is playing short sound files.
 
                 //Pause playback and reset player to the start of the file. That way, we can
                 //play the word from the beginning when we resume playback.
@@ -65,8 +66,8 @@ public class AnimalActivity extends AppCompatActivity {
         mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
         //Create an array
-        //Define array final because an anonymous class cannot access local varialbes in its enclosing
-        // scope that are not declared final
+        //Define array final because an anonymous class cannot access local variables in its enclosing
+        //scope that are not declared final
         final ArrayList<Word> words = new ArrayList<Word>();
 
         //Word w = new Word("one", "uno");
@@ -187,7 +188,7 @@ public class AnimalActivity extends AppCompatActivity {
     }//End releaseMediaPlayer()
 
     //User is starting to play sound, before sounds finishes playing, user moves to some other
-    // activty, then release media player resources immediately.
+    // activity, then release media player resources immediately.
     @Override
     protected void onStop() {
         super.onStop();

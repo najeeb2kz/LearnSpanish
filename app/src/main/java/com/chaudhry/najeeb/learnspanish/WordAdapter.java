@@ -1,7 +1,7 @@
 package com.chaudhry.najeeb.learnspanish;
 
 import android.content.Context;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,8 +19,9 @@ public class WordAdapter extends ArrayAdapter<Word> {
     private int mColorResourceID;
 
     public WordAdapter(Context context, ArrayList<Word> word, int colorResourceID) {
-        //passing in 0 for resource id because we don't need to rely on superclass array adapter inflating or creating list view for us
-        //instead our getView method will manually handle the inflating of the layout from the layout resource id for ourselves
+        //passing in 0 for resource id because we don't need to rely on superclass array adapter inflating or
+        //creating list view for us instead our getView method will manually handle the inflating of the layout
+        //from the layout resource id for ourselves
         super(context, 0, word);
         mColorResourceID = colorResourceID;
     }
@@ -65,7 +66,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
         //Set background color of the container view
         linearLayoutForTextViews.setBackgroundColor(color);
 
-        //Return the whole list item layout containing 2 TextViews and one ImageView so it can be shown in the ListView.
+        //Return the whole list item layout file (list_item.xml) containing 2 TextViews and one ImageView so it can be shown in the ListView.
         return listItemView;
     }
 }

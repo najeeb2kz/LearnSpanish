@@ -4,12 +4,9 @@ public class Word {
 
     private String mDefaultTranslation;
     private String mLearnSpanishTranslation;
-    //Image resource ID for the word
-    private int mImageResourceId = NO_IMAGE_PROVIDED;
-    //Constant vlaue that represents no image was provided for this word
-    private static final int NO_IMAGE_PROVIDED = -1;
-    //Audrio resource ID for the word
-    private int mAudioResourceId;
+    private int mImageResourceId = NO_IMAGE_PROVIDED;  //Image resource ID for the word
+    private static final int NO_IMAGE_PROVIDED = -1;//Constant value that represents no image was provided for this word
+    private int mAudioResourceId; //Audio resource ID for the word
 
     public Word(String defaultTranslation, String spanishTranslation, int audioResourceId) {
         mDefaultTranslation = defaultTranslation;
@@ -17,9 +14,9 @@ public class Word {
         mAudioResourceId = audioResourceId;
     }
 
-    public Word(String defaultTranslation, String miwokTranslation, int imageResourceId, int audioResourceId) {
+    public Word(String defaultTranslation, String spanishTranslation, int imageResourceId, int audioResourceId) {
         mDefaultTranslation = defaultTranslation;
-        mLearnSpanishTranslation = miwokTranslation;
+        mLearnSpanishTranslation = spanishTranslation;
         mImageResourceId = imageResourceId;
         mAudioResourceId = audioResourceId;
     }
@@ -38,7 +35,7 @@ public class Word {
 
     //Return whether or not there is an image for this word
     public boolean hasImage() {
-        return mImageResourceId != NO_IMAGE_PROVIDED;  //if mImageResourceId is not eqaual to -1 return true
+        return mImageResourceId != NO_IMAGE_PROVIDED;  //if mImageResourceId is not eaual to -1 return true
     }
 
     //Return audio resource ID of the word
